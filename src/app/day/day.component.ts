@@ -20,7 +20,7 @@ export class DayComponent implements OnInit {
   }
 
   onAddRoutine() {
-    this.message = 'A routine was added!';
+    this.message = 'A routine was added! ' + this.routineName;
   }
 
   onUpdateRoutine(event: any) {

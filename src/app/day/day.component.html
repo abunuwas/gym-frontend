@@ -3,7 +3,10 @@
   type="text"
   class="form-control"
   (input)="onUpdateRoutine($event)">
-
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="routineName">
 <p> {{ routineName }}</p>
 
 <button
