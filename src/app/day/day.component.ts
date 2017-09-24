@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./day.component.css']
 })
 export class DayComponent implements OnInit {
+  allowAddRoutine = false;
 
-  constructor() { }
+  constructor() {
+    setTimeout(() => {
+      this.allowAddRoutine = true;
+    }, 2000);
+  }
 
   ngOnInit() {
   }
