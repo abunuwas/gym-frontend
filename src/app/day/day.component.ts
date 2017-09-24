@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DayComponent implements OnInit {
   allowAddRoutine = false;
+  message = '';
 
   constructor() {
     setTimeout(() => {
@@ -15,6 +16,10 @@ export class DayComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  onAddRoutine() {
+    this.message = 'A routine was added!';
   }
 
 }

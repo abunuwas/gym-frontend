@@ -1,3 +1,6 @@
 <button
   class="btn btn-primary"
-  [disabled]="!allowAddRoutine">Add New Routine!</button>
+  [disabled]="!allowAddRoutine"
+  (click)="onAddRoutine()">Add New Routine!</button>
+
+<p [innerHTML]="message"></p>
