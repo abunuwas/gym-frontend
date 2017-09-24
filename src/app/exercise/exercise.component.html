@@ -1,0 +1,22 @@
+<p>
+  exercise works!
+</p>
+
+<label>Repetitions</label>
+<input type="number"
+       class="form-control"
+       [(ngModel)]="repetitions"
+       >
+
+<label>Weight</label>
+<input type="number"
+       class="form-control"
+       [(ngModel)]="weight"
+       >
+
+<button class="btn btn-primary"
+        [disabled]="canAddExerciseData"
+        (click)="onAddExerciseData()"
+        >Add Exercise Data!</button>
+
+<p [ngStyle]="{backgroundColor: getColorSets()}">{{ sets }}</p>
