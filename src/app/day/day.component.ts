@@ -9,6 +9,7 @@ export class DayComponent implements OnInit {
   allowAddRoutine = false;
   message = '';
   routineName = '';
+  routineAdded = false;
 
   constructor() {
     setTimeout(() => {
@@ -21,6 +22,7 @@ export class DayComponent implements OnInit {
 
   onAddRoutine() {
     this.message = 'A routine was added! ' + this.routineName;
+    this.routineAdded = true;
   }
 
   onUpdateRoutine(event: any) {

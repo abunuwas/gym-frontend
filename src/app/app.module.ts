@@ -6,12 +6,16 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { DayComponent } from './day/day.component';
+import { RoutineComponent } from './routine/routine.component';
+import { ExerciseComponent } from './exercise/exercise.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalendarComponent,
-    DayComponent
+    DayComponent,
+    RoutineComponent,
+    ExerciseComponent
   ],
   imports: [
     BrowserModule,

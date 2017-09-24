@@ -2,10 +2,6 @@
 <input
   type="text"
   class="form-control"
-  (input)="onUpdateRoutine($event)">
-<input
-  type="text"
-  class="form-control"
   [(ngModel)]="routineName">
 <p> {{ routineName }}</p>
 
@@ -14,4 +10,9 @@
   [disabled]="!allowAddRoutine"
   (click)="onAddRoutine()">Add New Routine!</button>
 
-<p [innerHTML]="message"></p>
+<p [innerHTML]="message" *ngIf="routineAdded; else noRoutine"></p>
+<ng-template #noRoutine>
+  <p>No routine has been added yet!</p>
+</ng-template>
+
+<app-exercise></app-exercise>
