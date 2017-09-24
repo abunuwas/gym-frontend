@@ -1,3 +1,11 @@
+<label>Routines</label>
+<input
+  type="text"
+  class="form-control"
+  (input)="onUpdateRoutine($event)">
+
+<p> {{ routineName }}</p>
+
 <button
   class="btn btn-primary"
   [disabled]="!allowAddRoutine"

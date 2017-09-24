@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DayComponent implements OnInit {
   allowAddRoutine = false;
   message = '';
+  routineName = '';
 
   constructor() {
     setTimeout(() => {
@@ -20,6 +21,10 @@ export class DayComponent implements OnInit {
 
   onAddRoutine() {
     this.message = 'A routine was added!';
+  }
+
+  onUpdateRoutine(event: any) {
+    this.routineName = event.target.value;
   }
 
 }
